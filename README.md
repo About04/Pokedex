@@ -1,4 +1,4 @@
-<p style="font-size: 30px;text-align:center;"><b>Pokédex</b></p>
+# Pokédex
 
 Este projeto é uma recriação de uma Pokédex, inspirada no universo do jogo Pokémon. Ele permite que os usuários explorem uma lista de Pokémons e, ao clicar em um Pokémon específico, visualizem informações detalhadas sobre ele.
 
