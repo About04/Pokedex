@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Pokédex</h1>
+    </header>
+
+    <main class="flex-container">
+        <main id="pokemon-list" class="flex-container"></main>
+        <button id="load-more-pokemons-button">Carregar mais Pokémon</button>
+        <dialog id="pokemon-info-dialog">
+            <div id="pokemon-info" class="flex-container">
+                <button id="close-button">X</button>
+                <h2 class="pokemon-title"></h2>
+                <img class="pokemon-image">
+                <div class="pokemon-description">
+                    <p class="pokemon-description"></p>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="flex-container">
+        <p>Site desenvolvido por About04 exclusivamente para fins de aprendizado.</p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

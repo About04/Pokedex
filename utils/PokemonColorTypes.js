@@ -1,0 +1,21 @@
+export class PokemonColorTypes {
+    static normal = "#A8A77A";
+    static fire = "#EE8130";
+    static water = "#6390F0";
+    static electric = "#F7D02C";
+    static grass = "#7AC74C";
+    static ice = "#96D9D6";
+    static fighting = "#C22E28";
+    static poison = "#A33EA1";
+    static ground = "#E2BF65";
+    static flying = "#A98FF3";
+    static psychic = "#F95587";
+    static bug = "#A6B91A";
+    static rock = "#B6A136";
+    static ghost = "#735797";
+    static dragon = "#6F35FC";
+    static dark = "#705746";
+    static steel = "#B7B7CE";
+    static fairy = "#D685AD";
+    static stellar = "#A02727";
+};
