@@ -29,13 +29,6 @@ h1 {
 
 
 
-/* body styles */
-body {
-    background-color: var(--background-color0);
-}
-
-
-
 /* header styles */
 header {
     font-size: 32px;
@@ -65,61 +58,62 @@ main {
 
 /* pokemon card styles */
 .pokemon-card {
-    flex-grow: 1;
+    cursor: pointer;
+    flex: 1 1 200px;
     margin-bottom: 50px;
-    width: 200px;
-}
-
-.pokemon-card:hover {
-    transition: 0.2s;
-    transform: translateY(-10px)
-}
-
-.pokemon-card button {
-    border: none;
-    background-color: inherit;
 }
 
 .pokemon-card img {
     background-color: var(--background-color1);
     border-radius: 5px;
-    object-fit: cover;
+    transition: 0.2s;
     width: 100%;
 }
 
-.pokemon-card img:hover {
+.pokemon-card:hover {
+    transition: 0.2s;
+    transform: translateY(-15px);
+}
+
+.pokemon-card:hover img {
     background-color: rgb(226, 226, 226);
 }
 
-.pokemon-card .pokemon-description {
+.pokemon-card .card-body {
     margin: 10px 0 0 10px;
     text-transform: capitalize;
+    transition: 0.2s;
+
+    .id {
+        color: #757575;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .type-icon {
+        display: inline-flex;
+        border-radius: 4px;
+        background-color: var(--color);
+        color: white;
+        font-size: 12px;
+        justify-content: center;
+        margin-right: 4px;
+        padding: 2px;
+        width: 55px;
+    }
 }
 
-.pokemon-card .pokemon-description .id {
-    color: #757575
-}
-
-.pokemon-card h2 {
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-.pokemon-card .type-icon {
-    display: inline-flex;
-    border-radius: 4px;
-    background-color: var(--color);
-    color: white;
-    font-size: 12px;
-    justify-content: center;
-    margin-right: 4px;
-    padding: 2px;
-    width: 55px;
+.pokemon-card:hover .card-body {
+    margin-left: 20px;
+    transition: 0.2s;
 }
 
 @media only screen and (max-width: 472px) {
     .pokemon-card {
-        flex: 1 0 160px
+        flex: 1 0 123px
     }
 
     .pokemon-card h2 {
@@ -196,7 +190,7 @@ main {
     width: 100px;
 }
 
-#pokemon-info .pokemon-description {
+#pokemon-info .card-body {
     flex-grow: 1;
     width: 100px;
 }

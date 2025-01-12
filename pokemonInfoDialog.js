@@ -30,7 +30,7 @@ async function showPokemonInfo(pokemonData) {
 
     const infoTitleElement = pokemonInfoElement.querySelector(".pokemon-title");
     const pokemonImage = pokemonInfoElement.querySelector("img");
-    const pokemonDescription = pokemonInfoElement.querySelector(".pokemon-description");
+    const pokemonDescription = pokemonInfoElement.querySelector(".card-body");
 
 
     infoTitleElement.textContent = pokemonName;

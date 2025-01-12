@@ -33,23 +33,20 @@ function generatePokemonCard(pokemonData) {
     const div = document.createElement("div");
     div.classList.add("pokemon-card");
     div.innerHTML = `
-        <audio id="${crieAudioId}" src="${pokemonData.cries.latest}" preload="auto"></audio>
-        
-        <button>
+            <audio id="${crieAudioId}" src="${pokemonData.cries.latest}" preload="auto"></audio>
             <img src="${pokemonData.sprites.other["official-artwork"].front_default}">
-        </button>
-        
-        <div class="pokemon-description">
-            <p class="id"> Nº ${pokemonData.id.toString().padStart(4, "0")}</p>
-            <h2>${pokemonData.name}</h2>
-            ${getPokemonTypeIcons(pokemonData)}
-        </div>
+            
+            <div class="card-body">
+                <p class="id"> Nº ${pokemonData.id.toString().padStart(4, "0")}</p>
+                <h2>${pokemonData.name}</h2>
+                ${getPokemonTypeIcons(pokemonData)}
+            </div>
     `;
 
-    div.querySelector("button").addEventListener("click", () => {
+    div.addEventListener("click", () => {
         showPokemonInfo(pokemonData);
         const audioElement = div.querySelector("audio");
-        audioElement.volume = 0.005;
+        audioElement.volume = 0.006;
         audioElement.play();
     });
 
